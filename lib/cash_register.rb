@@ -1,9 +1,13 @@
-class cash register
+class CashRegister
   
-  attr_accessor :cashregister
+  attr_accessor :items, :discount,:last_transaction, :total
   
-  def initialize cash_register
-    @cash_register = cash_register
+  def initialize (discount=0)
+    @discount= discount
+    @total=0
+    @items= []
   end
+  
+  
   
   
